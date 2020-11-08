@@ -54,16 +54,11 @@ app.use(commentRoutes);
 app.use(campgroundRoutes);
 app.use(authenticationRoutes);
 
-// app.listen(process.env.PORT ||'3000', function(err){
-//     if(err){
-//         console.log(err);
-//     }else{
-//         console.log("server started");
-//     }
-// });
-const { PORT=3000, LOCAL_ADDRESS='0.0.0.0' } = process.env
-app.listen(PORT, LOCAL_ADDRESS, () => {
-  const address = app.address();
-  console.log('server listening at', address);
+app.listen(process.env.PORT ||'3000', function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("server started");
+    }
 });
 // reload(app);
