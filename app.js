@@ -54,7 +54,7 @@ app.use(commentRoutes);
 app.use(campgroundRoutes);
 app.use(authenticationRoutes);
 
-app.listen('3000', function(err){
+app.listen(process.env.port||'3000', function(err){
     if(err){
         console.log(err);
     }else{
