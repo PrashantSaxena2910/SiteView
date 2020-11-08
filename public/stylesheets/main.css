@@ -42,8 +42,14 @@ body{
     padding: 1em;
 }
 
-/* Google Maps */
+Google Maps
 #map {
     height: 400px;
     width: 100%;
+}
+
+.navtext{
+    font-size: large;
+    font-family:"Nunito Sans";
+    font-weight: 500;
 }
